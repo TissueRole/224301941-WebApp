@@ -6,52 +6,40 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-        .nav-link{
-            color: aliceblue !important;
-        }
         .shreks{
             width: 200px;
             height: 200px;      
         }
-        .shrek_franchise{
-            background-image: url(https://wallpapers.com/images/hd/shrek-far-far-away-8t2j623m84o55der.jpg);
-            background-repeat: no-repeat;
-            background-position: center ;
-            width: 100%;
-            height: 920px;
-        }
-        .fixed{
-            position: fixed;
-        }
-        
 
     </style>
 </head>
 <body>
     <header>
-        <nav class=" fixed ">
-            <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Shreks</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#form">Form</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#google_maps">Google Map</a>
-            </li>
-            </ul>
-    </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top fs-5 p-3">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#shreks">Shreks</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#form">Form</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#google_maps">Google Map</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     </header>
     <main>
         <section id="home" class="shrek_franchise">
-            <h1 class="text-center">Shrek Franchise</h1>
+            
         </section>
 
-        <section>
+        <section id="shreks">
             <div class="container ">
                 <div class="row">
                     <div class="col">
@@ -125,8 +113,8 @@
             </div>
         </section>
             
-        <section id="Form">
-
+        <section id="form">
+            <p></p>
         </section>
 
         <section id="google_maps">
