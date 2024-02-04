@@ -130,6 +130,33 @@
           font-weight: bold;
           box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
         }
+        .maps{
+          width: 100%;
+          height: 800px;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+        }
+        .shrektastic{
+          text-align: center;
+          font-family: 'Dancing Script', cursive;
+          font-family: 'Grandstander', cursive;
+          font-weight: 700;
+          font-size: 50px;
+          color: rgb(176, 196, 0);
+          text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+        }
+        .footer{
+          background-color: rgb(176, 196, 0);
+          color: white;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+          height:80px;
+        }
+        .desc{
+          width: 60%;
+        }
+        .center-shrektastic{
+          display: flex;
+          justify-content: center;
+        }
 
     </style>
 </head>
@@ -194,27 +221,57 @@
             
         <section id="form" class="form-back mb-5">
             <div class="fcenter">
-              <form>
+              <form action="#" id="dform">
                 <label for="first" class="mb-1">First Name:</label>
-                <input type="text" id="first" class="mb-3 fsize" required>
+                <input type="text" id="first" class="mb-3 fsize" maxlength="20" pattern="[A-Za-z]{1,}" required>
                 <label for="last" class="mb-1">Last Name:</label>
-                <input type="text" id="last" class="mb-3 fsize" required>
+                <input type="text" id="last" class="mb-3 fsize" maxlength="20"  pattern="[A-Za-z]{1,}" required>
                 <label for="email" class="mb-1">Email:</label>
-                <input type="text" id="email" class="mb-3 fsize" required>
+                <input type="email" id="email" class="mb-3 fsize"  required>
                 <label for="age" class="mb-1">Age:</label>
                 <input type="number" id="age" class="mb-3 asize" min="0" max="150" required>
                 <div class="mb-3">
                   <label for="saviour" class="mb-1">Do you accept Shrek as your Lord and Saviour?</label>
-                  <input type="checkbox" id="saviour"> I accept Shrek as my Lord and Saviour
+                  <input type="checkbox" id="saviour" required> I accept Shrek as my Lord and Saviour
                 </div>
                 <input type="submit" class="submit">
               </form>
             </div>
         </section>
-
-        <section id="google_maps">
-
+        <section id="google_maps" class="">
+          <h2 class="shrektastic text-center mb-3">Shrekperience the Shrektastic Journey in Singapore</h2>
+          <div class="center-shrektastic">
+            <p class="desc ms-4 mt-4 tex mb-5">
+              Discover the enchanting land of <abbr title="Far Far Away">FFA</abbr> nestled in the heart of Singapore. 
+              This whimsical destination, inspired by the Shrek franchise, offers a surreal experience for visitors of all ages.
+              Immerse yourself in the fairy-tale charm, witness iconic landmarks, and encounter beloved characters on every corner.
+              Far Far Away in Singapore is a magical journey that brings the Shrekperience to life!
+            </p>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.861082518685!2d103.8238997!3d1.2551039000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da192e1c116955%3A0xf64de25a6840fb6c!2sFar%20Far%20Away!5e0!3m2!1sen!2sph!4v1707017100144!5m2!1sen!2sph" class="maps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
+    <footer class="footer text-center">
+      <p class="pt-4"> &copy; 2024 <cite>Shreksite</cite>. All rights reserved.</p>
+    </footer>
+    <div class="modal" tabindex="-1" id="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Shrek is Love, Shrek is Life</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>You have accepted Shrek as your Lord and Saviour</p>
+            <p>It's all Ogre now!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="html_exercise_3.js"></script>
 </body>
 </html>

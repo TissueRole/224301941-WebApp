@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $("#dform").submit(function(event){
+        event.preventDefault();
+        $("#modal").show();
+    });
+    $("#close").click(function(){
+        $("#modal").hide();
+        $("#dform")[0].reset();
+    });
+});
