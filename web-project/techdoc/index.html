@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,44 +5,23 @@
   </head>
   <body>
     <nav id="navbar">
-      <header>JS Documentation</header>
+      <header>Web Application Development</header>
       <ul>
         <li><a class="nav-link" href="#Introduction">Introduction</a></li>
         <li>
-          <a class="nav-link" href="#What_you_should_already_know"
-            >What you should already know</a
-          >
+          <a class="nav-link" href="#git_github">Git and Github</a>
         </li>
         <li>
-          <a class="nav-link" href="#JavaScript_and_Java"
-            >JavaScript and Java</a
+          <a class="nav-link" href="#Hypertext_Markup_Language"
+            >Hypertext Markup Language (HTML)</a
           >
         </li>
-        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
-        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#CSS">Cascading Style Sheets (CSS)</a></li>
+        <li><a class="nav-link" href="#Flexbox">Flexbox</a></li>
         <li>
-          <a class="nav-link" href="#Declaring_variables"
-            >Declaring variables</a
+          <a class="nav-link" href="#WSL"
+            >Window Subsystem for Linux</a
           >
-        </li>
-        <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
-        <li>
-          <a class="nav-link" href="#Global_variables">Global variables</a>
-        </li>
-        <li><a class="nav-link" href="#Constants">Constants</a></li>
-        <li><a class="nav-link" href="#Data_types">Data types</a></li>
-        <li>
-          <a class="nav-link" href="#if...else_statement"
-            >if...else statement</a
-          >
-        </li>
-        <li><a class="nav-link" href="#while_statement">while statement</a></li>
-        <li>
-          <a class="nav-link" href="#Function_declarations"
-            >Function declarations</a
-          >
-        </li>
-        <li><a class="nav-link" href="#Reference">Reference</a></li>
       </ul>
     </nav>
     <main id="main-doc">
@@ -51,407 +29,271 @@
         <header>Introduction</header>
         <article>
           <p>
-            JavaScript is a cross-platform, object-oriented scripting language.
-            It is a small and lightweight language. Inside a host environment
-            (for example, a web browser), JavaScript can be connected to the
-            objects of its environment to provide programmatic control over
-            them.
+            Web application development involves the creation of dynamic and
+            interactive programs that run on web servers and are accessed by
+            users through web browsers. This field of development combines
+            various technologies, frameworks, and programming languages. This
+            process involves creating user-friendly applications accessible via
+            web browsers, utilizing a combination of client-side and server-side
+            technologies.
           </p>
-
+          <h2 class="subintro2">Client-Side Development</h2>
           <p>
-            JavaScript contains a standard library of objects, such as Array,
-            Date, and Math, and a core set of language elements such as
-            operators, control structures, and statements. Core JavaScript can
-            be extended for a variety of purposes by supplementing it with
-            additional objects; for example:
+            Client-side development involves activities that occur within the
+            user's web browser, focusing on the presentation layer and user
+            interaction
           </p>
+          <h3>Technologies:</h3>
           <ul>
-            <li>
-              Client-side JavaScript extends the core language by supplying
-              objects to control a browser and its Document Object Model (DOM).
-              For example, client-side extensions allow an application to place
-              elements on an HTML form and respond to user events such as mouse
-              clicks, form input, and page navigation.
-            </li>
-            <li>
-              Server-side JavaScript extends the core language by supplying
-              objects relevant to running JavaScript on a server. For example,
-              server-side extensions allow an application to communicate with a
-              database, provide continuity of information from one invocation to
-              another of the application, or perform file manipulations on a
-              server.
-            </li>
+            <li>Hypertext Markup Language(HTML)</li>
+            <li>Cascading Style Sheets(CSS)</li>
+            <li>JavaScript</li>
+          </ul>
+          <h3>Responsibilities:</h3>
+          <ul>
+            <li>Creating and structuring web pages(HTML)</li>
+            <li>Styling and designing webpages(CSS)</li>
+            <li>Implementing interactive features and behavior(JavaScript)</li>
+            <li>Managing user interface components and user experience</li>
+          </ul>
+          <h2 class="subintro2">Server-Side Development</h2>
+          <p>
+            Server-side development involves activities that occur on the web
+            server, handling data processing, business logic, and interactions
+            with databases.
+          </p>
+          <h3 class="subintro3">Technologies:</h3>
+          <ul>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>MySQL</li>
+          </ul>
+          <h3>Responsibilities:</h3>
+          <ul>
+            <li>Managing data storage and retrieval from databases.</li>
+            <li>Executing business logic and application functionality.</li>
+            <li>Implementing user authentication and authorization.</li>
+            <li>Generating dynamic content to be sent to the client.</li>
           </ul>
         </article>
       </section>
-      <section class="main-section" id="What_you_should_already_know">
-        <header>What you should already know</header>
+      <section class="main-section" id="git_github">
+        <header>Git and Github</header>
         <article>
-          <p>This guide assumes you have the following basic background:</p>
-
+          <p>
+            Git and GitHub are essential tools and platforms used in software
+            development for version control, collaboration, and managing code
+            repositories. Understanding their roles and functionalities is
+            important for modern development workflows.
+          </p>
+          <h2>Git</h2>
+          <p>
+            Git is a distributed version control system that tracks changes to
+            files and directories. It allows developers to collaborate on
+            projects efficiently by managing different versions of code.
+          </p>
+          <h3>Some Git commands</h3>
           <ul>
-            <li>
-              A general understanding of the Internet and the World Wide Web
-              (WWW).
-            </li>
-            <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-            <li>
-              Some programming experience. If you are new to programming, try
-              one of the tutorials linked on the main page about JavaScript.
-            </li>
+            <li><strong>git status</strong></li>
+            <li><strong>git add</strong></li>
+            <li><strong>git commit -m "comment"</strong></li>
+            <li><strong>git clone</strong></li>
+            <li><strong>git push</strong></li>
+            <li><strong>git log</strong></li>
+          </ul>
+          <h2>Github</h2>
+          <p>
+            GitHub is a web-based platform that hosts Git repositories and
+            provides additional collaboration features.
+          </p>
+          <h3>GitHub Codespace</h3>
+          <p>GitHub Codespaces is a cloud-based development environment that allows developers to write, review, and debug code directly within a web browser or Visual Studio Code (VS Code) without the need for local setup.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Hypertext_Markup_Language">
+        <header>Hypertext Markup Language</header>
+        <article>
+          <p>
+            HTML (HyperText Markup Language) is the standard markup language
+            used to create the structure and content of web pages. It defines
+            the elements and components that make up a web page, allowing
+            developers to organize and present content on the internet.
+          </p>
+          <h2>Key Concepts</h2>
+          <h3>Document Structure</h3>
+          <p>
+            HTML documents follow a hierarchical structure defined by nested
+            elements. The basic structure of an HTML document includes the
+            &lthtml&gt, &lthead&gt, and &ltbody&gt elements.<br /><br />
+            Example:
+          </p>
+          <code><pre>
+&lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+  &lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &lttitle>Document&lt/title&gt
+  &lt/head&gt
+  &ltbody&gt
+    &ltp&gtThis is a paragraph&lt/p&gt
+  &lt/body&gt
+&lt/html&gt
+</pre></code>
+          <h3>Elements</h3>
+          <p>
+            HTML documents are composed of elements, which are defined by tags
+            enclosed in angle brackets ( &lt &gt ).
+          </p>
+          <h3>Tags</h3>
+          <p>
+            Tags are used to define different types of content within an HTML
+            document.
+          </p>
+          <h3>Attributes</h3>
+          <p>
+            Attributes provide additional information about HTML elements and
+            are defined within the opening tag.
+          </p>
+          <h3>Basic Tags</h3>
+          <ul>
+            <li><strong>&lthtml&gt</strong>: Represents the root element of an HTML document.</li>
+            <li><strong>&lthead&gt</strong>: Contains meta-information about the HTML document, such as the title, character set, and links to external resources.</li>
+            <li><strong>&lttitle&gt</strong>: Sets the title of the HTML document displayed in the browser tab.</li>
+            <li><strong>&ltbody&gt</strong>: Contains the content of the HTML document that is displayed in the browser window.</li>
+            <li><strong>&lth1 to &lth6&gt</strong>: Defines headings of different levels, where &lth1&gt is the highest level and &lth6&gt is the lowest level.</li>
+            <li><strong>&ltp&gt</strong>: Represents a paragraph of text.</li>
+            <li><strong>&lta&gt</strong>: Creates hyperlinks to other web pages or resources.</li>
+            <li><strong>&ltimg&gt</strong>: Inserts images into the HTML document.</li>
+          </ul>
+          <h2>Semantic HTML</h2>
+          <p>Semantic HTML refers to using HTML elements that convey meaning about the content they contain. This helps improve readability of the web page. <br><br> Example:</p>
+          <ul>
+            <li><strong>&ltheader&gt</strong></li>
+            <li><strong>&ltnav&gt</strong></li>
+            <li><strong>&ltmain&gt</strong></li>
+            <li><strong>&ltsection&gt</strong></li>
+            <li><strong>&ltarticle&gt</strong></li>
+            <li><strong>&ltaside&gt</strong></li>
+            <li><strong>&ltfooter&gt</strong></li>
           </ul>
         </article>
       </section>
-      <section class="main-section" id="JavaScript_and_Java">
-        <header>JavaScript and Java</header>
+      <section class="main-section" id="CSS">
+        <header>Cascading Style Sheets</header>
         <article>
-          <p>
-            JavaScript and Java are similar in some ways but fundamentally
-            different in some others. The JavaScript language resembles Java but
-            does not have Java's static typing and strong type checking.
-            JavaScript follows most Java expression syntax, naming conventions
-            and basic control-flow constructs which was the reason why it was
-            renamed from LiveScript to JavaScript.
-          </p>
-
-          <p>
-            In contrast to Java's compile-time system of classes built by
-            declarations, JavaScript supports a runtime system based on a small
-            number of data types representing numeric, Boolean, and string
-            values. JavaScript has a prototype-based object model instead of the
-            more common class-based object model. The prototype-based model
-            provides dynamic inheritance; that is, what is inherited can vary
-            for individual objects. JavaScript also supports functions without
-            any special declarative requirements. Functions can be properties of
-            objects, executing as loosely typed methods.
-          </p>
-          <p>
-            JavaScript is a very free-form language compared to Java. You do not
-            have to declare all variables, classes, and methods. You do not have
-            to be concerned with whether methods are public, private, or
-            protected, and you do not have to implement interfaces. Variables,
-            parameters, and function return types are not explicitly typed.
-          </p>
-        </article>
-      </section>
-      <section class="main-section" id="Hello_world">
-        <header>Hello world</header>
-        <article>
-          To get started with writing JavaScript, open the Scratchpad and write
-          your first "Hello world" JavaScript code:
-          <code
-            >function greetMe(yourName) { alert("Hello " + yourName); }
-            greetMe("World");
+        <p>CSS (Cascading Style Sheets) is a fundamental technology used in web development to define the presentation and styling of HTML documents. 
+          It plays a crucial role in enhancing the visual appeal, layout, and overall aesthetics of web pages. 
+          CSS enables developers to control the appearance of elements on a webpage, ensuring consistency and creativity in design.</p>
+          <h2>Key Concepts</h2>
+          <h3>Selectors</h3>
+          <p>Selectors target specific HTML elements to apply styles. Common selectors include element selectors (p, h1, div), class selectors (.className), and ID selectors (#idName).</p>
+          <h3>Properties and Values</h3>
+          <p>CSS properties define the appearance of HTML elements, while values determine how these properties are applied. For example, color: blue; sets the text color to blue.</p>
+          <h3>Inline Style Sheets</h3>
+          <p>Styles applied directly to HTML elements using the style attribute.</p>
+          <code>&ltp style="color: red;"&gtThis is a red paragraph. &lt/p&gt</code>
+          
+          <h3>Internal Style Sheets</h3>
+          <p>Styles defined within &ltstyle&gt tags in the &lthead&gt section of an HTML document.</p>
+          <code><pre>
+&ltstyle&gt
+  h1 {
+    color: green;
+  }
+&lt/style&gt
+</pre></code>
+          <h3>External Style Sheets</h3>
+          <p>Styles stored in separate .css files and linked to HTML documents using the &ltlink&gt tag.</p>
+          <code>&ltlink rel="stylesheet" href="styles.css"&gt
           </code>
-
-          Select the code in the pad and hit Ctrl+R to watch it unfold in your
-          browser!
         </article>
       </section>
-      <section class="main-section" id="Variables">
-        <header>Variables</header>
-        <p>
-          You use variables as symbolic names for values in your application.
-          The names of variables, called identifiers, conform to certain rules.
-        </p>
-        <p>
-          A JavaScript identifier must start with a letter, underscore (_), or
-          dollar sign ($); subsequent characters can also be digits (0-9).
-          Because JavaScript is case sensitive, letters include the characters
-          "A" through "Z" (uppercase) and the characters "a" through "z"
-          (lowercase).
-        </p>
-        <p>
-          You can use ISO 8859-1 or Unicode letters such as å and ü in
-          identifiers. You can also use the Unicode escape sequences as
-          characters in identifiers. Some examples of legal names are
-          Number_hits, temp99, and _name.
-        </p>
-      </section>
-      <section class="main-section" id="Declaring_variables">
-        <header>Declaring variables</header>
-        <article>
-          You can declare a variable in three ways:
-          <p>
-            With the keyword var. For example, <code>var x = 42.</code> This
-            syntax can be used to declare both local and global variables.
-          </p>
-          <p>
-            By simply assigning it a value. For example,
-            <code>x = 42.</code> This always declares a global variable. It
-            generates a strict JavaScript warning. You shouldn't use this
-            variant.
-          </p>
-          <p>
-            With the keyword let. For example,<code> let y = 13.</code> This
-            syntax can be used to declare a block scope local variable. See
-            Variable scope below.
-          </p>
-        </article>
-      </section>
-      <section class="main-section" id="Variable_scope">
-        <header>Variable scope</header>
+      <section class="main-section" id="Flexbox">
+        <header>Flexbox</header>
         <article>
           <p>
-            When you declare a variable outside of any function, it is called a
-            global variable, because it is available to any other code in the
-            current document. When you declare a variable within a function, it
-            is called a local variable, because it is available only within that
-            function.
+            Flexbox is a layout model designed to simplify the arrangement of elements within a container, providing a more efficient and responsive way to design complex web layouts.
           </p>
-
-          <p>
-            JavaScript before ECMAScript 2015 does not have block statement
-            scope; rather, a variable declared within a block is local to the
-            function (or global scope) that the block resides within. For
-            example the following code will log 5, because the scope of x is the
-            function (or global context) within which x is declared, not the
-            block, which in this case is an if statement.
-          </p>
-          <code>if (true) { var x = 5; } console.log(x); // 5</code>
-          <p>
-            This behavior changes, when using the let declaration introduced in
-            ECMAScript 2015.
-          </p>
-
-          <code
-            >if (true) { let y = 5; } console.log(y); // ReferenceError: y is
-            not defined</code
-          >
-        </article>
-      </section>
-      <section class="main-section" id="Global_variables">
-        <header>Global variables</header>
-        <article>
-          <p>
-            Global variables are in fact properties of the global object. In web
-            pages the global object is window, so you can set and access global
-            variables using the window.variable syntax.
-          </p>
-
-          <p>
-            Consequently, you can access global variables declared in one window
-            or frame from another window or frame by specifying the window or
-            frame name. For example, if a variable called phoneNumber is
-            declared in a document, you can refer to this variable from an
-            iframe as parent.phoneNumber.
-          </p>
-        </article>
-      </section>
-      <section class="main-section" id="Constants">
-        <header>Constants</header>
-        <article>
-          <p>
-            You can create a read-only, named constant with the const keyword.
-            The syntax of a constant identifier is the same as for a variable
-            identifier: it must start with a letter, underscore or dollar sign
-            and can contain alphabetic, numeric, or underscore characters.
-          </p>
-
-          <code>const PI = 3.14;</code>
-          <p>
-            A constant cannot change value through assignment or be re-declared
-            while the script is running. It has to be initialized to a value.
-          </p>
-
-          <p>
-            The scope rules for constants are the same as those for let block
-            scope variables. If the const keyword is omitted, the identifier is
-            assumed to represent a variable.
-          </p>
-
-          <p>
-            You cannot declare a constant with the same name as a function or
-            variable in the same scope. For example:
-          </p>
-
-          <code
-            >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
-            WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-            //statements }</code
-          >
-          However, object attributes are not protected, so the following
-          statement is executed without problems.
-          <code
-            >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
-            "otherValue";</code
-          >
-        </article>
-      </section>
-      <section class="main-section" id="Data_types">
-        <header>Data types</header>
-        <article>
-          <p>The latest ECMAScript standard defines seven data types:</p>
+          <h2>Key Concepts</h2>
+          <h3>Main Axis and Cross Axis</h3>
+          <p>Main Axis: The primary axis defined by the flex-direction property (row, row-reverse, column, column-reverse). <br>
+            Cross Axis: The perpendicular axis to the main axis.</p>
+          <h3>Flex Container</h3>
+          <p>An element set to display: flex; becomes a flex container, which enables the use of flexbox properties to control the layout of its child elements.</p>
+          <h3>Flex Items</h3>
+          <p>Children of a flex container are referred to as flex items. </p>
+          <h3>Flex Properties</h3>
+          <p>Flexbox introduces a set of properties to control the behavior and layout of flex items</p>
           <ul>
-            <li>
-              <p>Six data types that are primitives:</p>
-              <ul>
-                <li>Boolean. true and false.</li>
-                <li>
-                  null. A special keyword denoting a null value. Because
-                  JavaScript is case-sensitive, null is not the same as Null,
-                  NULL, or any other variant.
-                </li>
-                <li>
-                  undefined. A top-level property whose value is undefined.
-                </li>
-                <li>Number. 42 or 3.14159.</li>
-                <li>String. "Howdy"</li>
-                <li>
-                  Symbol (new in ECMAScript 2015). A data type whose instances
-                  are unique and immutable.
-                </li>
-              </ul>
-            </li>
-
-            <li>and Object</li>
+            <li><strong>display: flex;</strong> : Establishes a flex container.</li>
+            <li><strong>flex-direction</strong> : Defines the main axis direction.</li>
+            <li><strong>justify-content</strong> : Aligns flex items along the main axis.</li>
+            <li><strong>align-items</strong> : Aligns flex items along the cross axis.</li>
+            <li><strong>flex-grow, flex-shrink, flex-basis</strong> : Controls how flex items grow, shrink, and initialize.</li>
           </ul>
-          Although these data types are a relatively small amount, they enable
-          you to perform useful functions with your applications. Objects and
-          functions are the other fundamental elements in the language. You can
-          think of objects as named containers for values, and functions as
-          procedures that your application can perform.
-        </article>
+          <h2>To create a basic flexbox layout, follow these steps:</h2>
+          <h3>1. Set Up the Flex Container</h3>
+          <code><pre>
+.container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center; 
+}
+</pre></code>
+          <h3>2. Define FLex Items</h3>
+          <code><pre>
+.item {
+  flex: 1; 
+}
+</pre></code>
+          <h3>3. HTML Structure</h3>
+          <code><pre>
+&ltdiv class="container"&gt
+  &ltdiv class="item"&gtItem 1 &lt/div&gt
+  &ltdiv class="item"&gtItem 2 &lt/div&gt
+  &ltdiv class="item"&gtItem 3 &lt/div&gt
+&lt/div&gt
+</pre></code>
+      </article>
       </section>
-      <section class="main-section" id="if...else_statement">
-        <header>if...else statement</header>
+      <section class="main-section" id="WSL">
+        <header>Window Subsystem for Linux</header>
         <article>
-          Use the if statement to execute a statement if a logical condition is
-          true. Use the optional else clause to execute a statement if the
-          condition is false. An if statement looks as follows:
-
-          <code>if (condition) { statement_1; } else { statement_2; }</code>
-          condition can be any expression that evaluates to true or false. See
-          Boolean for an explanation of what evaluates to true and false. If
-          condition evaluates to true, statement_1 is executed; otherwise,
-          statement_2 is executed. statement_1 and statement_2 can be any
-          statement, including further nested if statements.
           <p>
-            You may also compound the statements using else if to have multiple
-            conditions tested in sequence, as follows:
+            Windows Subsystem for Linux (WSL) is a compatibility layer developed by Microsoft that enables you to run a Linux operation system on Windows 10 or later versions. 
           </p>
-          <code
-            >if (condition_1) { statement_1; } else if (condition_2) {
-            statement_2; } else if (condition_n) { statement_n; } else {
-            statement_last; }
-          </code>
-          In the case of multiple conditions only the first logical condition
-          which evaluates to true will be executed. To execute multiple
-          statements, group them within a block statement ({ ... }) . In
-          general, it's good practice to always use block statements, especially
-          when nesting if statements:
-
-          <code
-            >if (condition) { statement_1_runs_if_condition_is_true;
-            statement_2_runs_if_condition_is_true; } else {
-            statement_3_runs_if_condition_is_false;
-            statement_4_runs_if_condition_is_false; }</code
-          >
-          It is advisable to not use simple assignments in a conditional
-          expression, because the assignment can be confused with equality when
-          glancing over the code. For example, do not use the following code:
-          <code>if (x = y) { /* statements here */ }</code> If you need to use
-          an assignment in a conditional expression, a common practice is to put
-          additional parentheses around the assignment. For example:
-
-          <code>if ((x = y)) { /* statements here */ }</code>
-        </article>
-      </section>
-      <section class="main-section" id="while_statement">
-        <header>while statement</header>
-        <article>
-          A while statement executes its statements as long as a specified
-          condition evaluates to true. A while statement looks as follows:
-
-          <code>while (condition) statement</code> If the condition becomes
-          false, statement within the loop stops executing and control passes to
-          the statement following the loop.
-
-          <p>
-            The condition test occurs before statement in the loop is executed.
-            If the condition returns true, statement is executed and the
-            condition is tested again. If the condition returns false, execution
-            stops and control is passed to the statement following while.
-          </p>
-
-          <p>
-            To execute multiple statements, use a block statement ({ ... }) to
-            group those statements.
-          </p>
-
-          Example:
-
-          <p>
-            The following while loop iterates as long as n is less than three:
-          </p>
-
-          <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
-          <p>
-            With each iteration, the loop increments n and adds that value to x.
-            Therefore, x and n take on the following values:
-          </p>
-
+          <h2>List of Commands</h2>
+          <h3>Commands</h3>
           <ul>
-            <li>After the first pass: n = 1 and x = 1</li>
-            <li>After the second pass: n = 2 and x = 3</li>
-            <li>After the third pass: n = 3 and x = 6</li>
+            <li><strong>wsl --install</strong>: installs Linux</li>
+            <li><strong>wsl</strong>: opens Linux</li>
+            <li><strong>logout or exit returns to command prompt in windows</strong>:</li>
+            <li><strong>clear</strong>: clears the terminal screen</li>
           </ul>
-          <p>
-            After completing the third pass, the condition n &lt; 3 is no longer
-            true, so the loop terminates.
-          </p>
-        </article>
-      </section>
-      <section class="main-section" id="Function_declarations">
-        <header>Function declarations</header>
-        <article>
-          A function definition (also called a function declaration, or function
-          statement) consists of the function keyword, followed by:
-
+          <h3>Apache Commands</h3>
           <ul>
-            <li>The name of the function.</li>
-            <li>
-              A list of arguments to the function, enclosed in parentheses and
-              separated by commas.
-            </li>
-            <li>
-              The JavaScript statements that define the function, enclosed in
-              curly brackets, { }.
-            </li>
+            <li><strong>sudo apt upgrade</strong>: updates Linux before installation of Apache</li>
+            <li><strong>sudo apt update</strong>: upgrades Linux </li>
+            <li><strong>sudo apt-get install apache2</strong>: installs Apache server</li>
+            <li><strong>sudo service apache2 start</strong>: starts Apache Server</li>
+            <li><strong>sudo service apache2 stop</strong>: stops Apache Server</li>
           </ul>
-          <p>
-            For example, the following code defines a simple function named
-            square:
-          </p>
-
-          <code>function square(number) { return number * number; }</code>
-          <p>
-            The function square takes one argument, called number. The function
-            consists of one statement that says to return the argument of the
-            function (that is, number) multiplied by itself. The return
-            statement specifies the value returned by the function.
-          </p>
-          <code>return number * number;</code>
-          <p>
-            Primitive parameters (such as a number) are passed to functions by
-            value; the value is passed to the function, but if the function
-            changes the value of the parameter, this change is not reflected
-            globally or in the calling function.
-          </p>
-        </article>
-      </section>
-      <section class="main-section" id="Reference">
-        <header>Reference</header>
-        <article>
+          <h3>Apache Setup</h3>
           <ul>
-            <li>
-              All the documentation in this page is taken from
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
-                target="_blank"
-                >MDN</a
-              >
-            </li>
+            <li><strong>sudo nano</strong>: open text editor</li>
+            <li><strong>sudo chown -R username path/to/working/directory</strong>: make folder writable</li>
+            <li><strong>sudo nano /etc/apache2/sites-available/000-default.conf</strong>: enable site look for document root and change it your desired folder to run in localhost</li>
+            <li><strong>sudo systemtl status apache2</strong>: check if apache is running</li>
+            <li><strong>sudo sustemtl restart apache2</strong>: restart Apache</li>
+          </ul>
+          <h2>Folder Locations</h2>
+          <ul>
+            <li><strong>Apache Folder</strong>/etc/apache2/</li>
+            <li><strong>Document Root</strong>/var/www/</li>
           </ul>
         </article>
       </section>
